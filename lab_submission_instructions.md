@@ -12,9 +12,9 @@
 
 | **Details**                                                                                        | **Comment** |
 |:---------------------------------------------------------------------------------------------------|:------------|
-| **Student ID:**                                                                                    |             |
-| **Name:**                                                                                          |             |
-| **What part of the lab did you personally contribute to,** <br>**and what did you learn from it?** |             |
+| **Student ID:**                                                                                    |     169223        | 
+| **Name:**                                                                                          |   Lukwago Bernard Desmond          |
+| **What part of the lab did you personally contribute to,** <br>**and what did you learn from it?** |     I set up our group repository, chose Oracle (ORCL) as our stock, downloaded the data on 22 November 2026 and wrote the Data section of this file. I also adapted Notebook 1 to Oracle (nb1_lab_data_and_candlesticks_ORCL.ipynb), covering the data quality check, the 18 days with moves over 10%, the candlestick chart and our findings on returns and correlations. I learned to check data quality before modelling, and that large moves are often real events, like earnings reports, rather than errors. I also learned why we forecast returns instead of prices, and that a strong same-day correlation does not mean we can forecast tomorrow's price.        |
 
 **Member 2**
 
@@ -47,6 +47,19 @@
 | **Student ID:**                                                                                    |             |
 | **Name:**                                                                                          |             |
 | **What part of the lab did you personally contribute to,** <br>**and what did you learn from it?** |             |
+
+## Data
+
+| **Key**                  | **Value** |
+|:-------------------------|:----------|
+| **Stock:**               | Oracle Corporation (ORCL), listed on the New York Stock Exchange |
+| **Source:**              | Yahoo Finance, downloaded with `python download_data.py --target ORCL` |
+| **Download date:**       | 22 November 2026 |
+| **Period covered:**      | 2 January 2015 to 9 November 2026 (2,981 trading days) |
+
+**Why we chose Oracle:** Oracle is a large US technology company, so the predictors in the lab (the S&P 500, the technology fund, the VIX, interest rates and the US dollar) have a clear economic link to its price. It has traded for the whole snapshot period, which gives us almost 12 years of daily data and enough history for the walk-forward settings in the notebooks without changing `INITIAL_TRAIN`. Its price has also had some sharp moves in recent years, which makes it a good test of whether a model can beat the naive forecast.
+
+**Data quality:** The data quality report found no duplicate dates, missing values, non-positive prices or zero-volume days. The longest gap between trading days is 4 days (a long weekend). There are 18 days on which the closing price moved by more than 10%, which we look at in Notebook 1.
 
 ## Scenario
 
