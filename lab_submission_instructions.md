@@ -18,11 +18,13 @@
 
 **Member 2**
 
-| **Details**                                                                                        | **Comment** |
-|:---------------------------------------------------------------------------------------------------|:------------|
-| **Student ID:**                                                                                    |             |
-| **Name:**                                                                                          |             |
-| **What part of the lab did you personally contribute to,** <br>**and what did you learn from it?** |             |
+| **Details**                                                                                        | **Comment**            |
+|:---------------------------------------------------------------------------------------------------|:-----------------------|
+| **Student ID:**                                                                                    | 150367                 |
+| **Name:**                                                                                          | Christine Nessy Mungla |
+| **What part of the lab did you personally contribute to,** <br>**and what did you learn from it?** |  I personally contributed to the **Stationarity and Returns section (Notebook 2)** of the Time Series Lab, using Oracle Corporation (ORCL) stock data. My responsibility involved conducting Augmented Dickey-Fuller (ADF) and KPSS tests on closing prices and log returns to determine whether the data was stationary. I also worked on analysing autocorrelation using ACF and PACF plots and examining volatility clustering in the stock returns.
+
+Through this task, I learned how to assess stationarity in financial time-series data, interpret statistical test results and understand the importance of transforming stock prices into log returns before forecasting. I also gained practical experience in Python-based time-series analysis and learned how non-stationary data can affect the reliability of forecasting models.                      |
 
 **Member 3**
 
