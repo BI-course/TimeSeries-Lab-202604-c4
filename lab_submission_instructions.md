@@ -34,13 +34,15 @@ Through this task, I learned how to assess stationarity in financial time-series
 | **Name:**                                                                                          | Nyaga Gacheru |
 | **What part of the lab did you personally contribute to,** <br>**and what did you learn from it?** | I adapted Notebook 3 to Oracle Corporation (`nb3_lab_classical_baselines_ORCL.ipynb`) to evaluate classical forecasting baselines—naive, drift, 20-day moving average, simple exponential smoothing, ARIMA(2,1,0), ARMA(1,0), and ARMAX(1,0) with seven lagged market predictors—across 29 expanding walk-forward folds from October 2019 to November 2026. I also ran the Diebold-Mariano (DM) statistical tests against the naive baseline, analysed residual diagnostics, and documented our findings. Through this work, I learned that a forecast can appear accurate on a multi-year price chart while merely lagging one day behind actual prices, and why formal out-of-sample error metrics and DM significance tests are essential before claiming a model beats a random walk. |
 
+
 **Member 4**
 
-| **Details**                                                                                        | **Comment** |
-|:---------------------------------------------------------------------------------------------------|:------------|
-| **Student ID:**                                                                                    |             |
-| **Name:**                                                                                          |             |
-| **What part of the lab did you personally contribute to,** <br>**and what did you learn from it?** |             |
+| **Details** | **Comment** |
+|:------------|:------------|
+| **Student ID:** | 167753 |
+| **Name:** | Clara Waithaka |
+| **What part of the lab did you personally contribute to,** <br>**and what did you learn from it?** | I adapted the Notebook 4 to Oracle Corporation (ORCL) in `nb4_lab_ml_models_ORCL.ipynb`. My contribution involved developing and evaluating 47 predictors across six feature groups, conducting look-ahead bias checks, implementing 29 expanding walk-forward validation folds, and tuning Ridge Regression and Gradient Boosting using five inner validation folds. I selected an alpha of 10,000 for Ridge Regression and a maximum tree depth of 2 with a learning rate of 0.01 for Gradient Boosting. I evaluated both models against the naive forecast using RMSE, MAE, MAPE, directional accuracy, out-of-sample R² and Diebold–Mariano tests. The results showed that neither model outperformed the naive forecast, with Ridge showing no statistically significant difference and Gradient Boosting performing significantly worse. I also generated 1,781 out-of-sample predictions for both models. Through this work, I learned how to engineer time-series predictors, detect data leakage, perform chronological model validation, tune machine-learning models without accessing the test period, and interpret forecasting performance using statistical evaluation techniques. |
+
 
 **Member 5**
 
